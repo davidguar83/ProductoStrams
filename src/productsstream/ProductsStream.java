@@ -1,4 +1,5 @@
-/*
+
+        /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -27,9 +28,9 @@ public class ProductsStream {
     public static void main(String[] args) {
         
         
-        Product producto1 = new Product("cod1", "parafusos", 3);
-          Product producto2 = new Product("cod2", "cravos", 4);
-          Product po3 = new Product();
+        Producto producto1 = new Producto("cod1", "parafusos", 3);
+          Producto producto2 = new Producto("cod2", "cravos", 4);
+          Producto po3 = new Producto();
           
         try {
             DataInputStream ler = new DataInputStream(new FileInputStream("C:/Users/david/Desktop/prueba clase file/productos.txt"));
@@ -115,54 +116,8 @@ public class ProductsStream {
 }
 
 
- class Product{
+
     
-   private String codigo="";
-    
-   private String descricion="";
-    
-   private double prezo=0;
-
-    public Product() {
-    }
-     
-     
-     public Product(String c, String d,int p) {
-         
-         codigo=c;
-         descricion=d;
-         prezo=p;
-         
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getDescricion() {
-        return descricion;
-    }
-
-    public void setDescricion(String descricion) {
-        this.descricion = descricion;
-    }
-
-    public double getPrezo() {
-        return prezo;
-    }
-
-    public void setPrezo(double prezo) {
-        this.prezo = prezo;
-    }
-    
-     
-     
-     
-    
-}
+   
 
 

@@ -5,6 +5,9 @@
  */
 package productsstream;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 /**
  *
  * @author david
@@ -55,7 +58,9 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "codigo= " + codigo + ", descricion= " + descricion + ", prezo= " + prezo ;
+        return "Codigo:\t\t" + codigo + "\nDescripcion:\t" + descricion + "\nPrezo:\t\t"
+                + NumberFormat.getCurrencyInstance(Locale.forLanguageTag("es-ES")).format(prezo);
+        //Formateo o atributo 'prezo' a euros (en español)
     }
     
      
