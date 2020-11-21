@@ -16,7 +16,7 @@ public class Producto {
     
     private String codigo="";
     
-   private String descricion="";
+   private String descripcion="";
     
    private double prezo=0;
 
@@ -24,10 +24,10 @@ public class Producto {
     }
      
      
-     public Producto(String c, String d,int p) {
+     public Producto(String c, String d,double p) {
          
          codigo=c;
-         descricion=d;
+         descripcion=d;
          prezo=p;
          
     }
@@ -40,12 +40,12 @@ public class Producto {
         this.codigo = codigo;
     }
 
-    public String getDescricion() {
-        return descricion;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDescricion(String descricion) {
-        this.descricion = descricion;
+    public void setDescripcion(String descricion) {
+        this.descripcion = descricion;
     }
 
     public double getPrezo() {
@@ -58,7 +58,7 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Codigo:\t\t" + codigo + "\nDescripcion:\t" + descricion + "\nPrezo:\t\t"
+        return "Codigo:\t\t" + codigo + "\nDescripcion:\t" + descripcion + "\nPrezo:\t\t"
                 + NumberFormat.getCurrencyInstance(Locale.forLanguageTag("es-ES")).format(prezo);
         //Formateo o atributo 'prezo' a euros (en español)
     }
